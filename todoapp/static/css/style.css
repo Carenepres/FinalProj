@@ -1,3 +1,4 @@
+*/
 * {
     padding: 0px;
     margin: 0px;
@@ -22,6 +23,7 @@ body {
     color: black; /* Change color to black */
     margin-top: 20px; /* Position title higher */
     margin-bottom: 20px; /* Space between title and box */
+    font-family: 'Lucida Handwriting', cursive; /* Apply Lucida Handwriting font to the title */
 }
 
 .main-container {
