@@ -1,29 +1,27 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 
 {% block content %}
-
 <div class="todo-container">
   <div class="todo-search">
     <form action="" method="POST">
-     
-      {% comment %} <input type="text" placeholder="Enter Todo" /> {% endcomment %}
       {% csrf_token %}
-      {{form.title}}
+      {{ form.title }}
       <button>Add</button>
+      {% if custom_error_message %}
+        <div class="alert alert-warning mt-2">
+          {{ custom_error_message }}
+        </div>
+      {% endif %}
     </form>
   </div>
 
   <div class="todo-list">
-    
-    
     {% for task in tasks %}
-
     <div class="todo-list-item">
       <div class="task">
         <input type="checkbox" />
-        <p>{{task.title}}</p>
+        <p>{{ task.title }}</p>
       </div>
-
       <div class="btn-container">
         <div class="edit">
           <a href="{% url 'task-update' task.id %}">
@@ -37,19 +35,7 @@
         </div>
       </div>
     </div>
-      
     {% endfor %}
-      
-   
-
-
-
-
-
-   
-
- 
   </div>
 </div>
-
 {% endblock content %}

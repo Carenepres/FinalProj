@@ -1,35 +1,40 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
-body{
-    /* background-color: #a459f4; */
+body {
     background-color: #a459f4;
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.todo-list-item .btn-container a{ 
-    color: white
+.app-title {
+    font-size: 4rem; /* Larger font size */
+    color: white;
+    margin-bottom: 40px; /* Increased margin */
 }
 
-.todo-container{
-    width:  450px;
+.todo-list-item .btn-container a {
+    color: white;
+}
+
+.todo-container {
+    width: 800px; /* Increased width */
     height: auto;
-    /* border: 1px solid white;| */
     padding: 0px 20px 0px 20px;
 }
 
-.todo-search{
+.todo-search {
     width: 100%;
-    height: 120px;
+    height: 200px; /* Increased height */
     background-color: white;
     border-radius: 10px;
     padding: 0px 10px 0px 10px;
@@ -38,16 +43,15 @@ body{
     justify-content: center;
 }
 
-.todo-search form{
+.todo-search form {
     width: 100%;
-    height: 80px;
-    /* border: 1px solid black;| */
+    height: 100px; /* Increased height */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.todo-list{
+.todo-list {
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -57,35 +61,35 @@ body{
     padding: 10px 10px 20px 10px;
 }
 
-.todo-search form input, .input, select{
+.todo-search form input, .input, select {
     border: 1px solid silver;
-    height: 50px;
+    height: 60px; /* Increased height */
     padding: 10px;
-    width: 300px;
+    width: 500px; /* Increased width */
     border-radius: 10px;
 }
 
-.myinput{
+.myinput {
     border: 1px solid silver;
-    height: 50px;
+    height: 60px; /* Increased height */
     padding: 10px;
-    width: 300px;
+    width: 500px; /* Increased width */
     border-radius: 10px;
 }
 
-select{
+select {
     width: 100%;
     margin: 10px 0px 10px 0px;
     height: 40px;
 }
 
-input:focus, select:focus{
+input:focus, select:focus {
     outline: 1px solid #a459f4;
 }
 
-.todo-search form button{
-    height: 50px;
-    width: 70px;
+.todo-search form button {
+    height: 60px; /* Increased height */
+    width: 100px; /* Increased width */
     padding: 0px 10px 0px 10px;
     background-color: #a459f4;
     color: white;
@@ -94,7 +98,7 @@ input:focus, select:focus{
     cursor: pointer;
 }
 
-.todo-list-item{
+.todo-list-item {
     width: 100%;
     height: 50px;
     border-bottom: 1px solid silver;
@@ -102,17 +106,17 @@ input:focus, select:focus{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
-.todo-list-item .btn-container{
+.todo-list-item .btn-container {
     display: flex;
-
 }
-.todo-list-item .edit{
+
+.todo-list-item .edit {
     margin-right: 10px;
 }
-.todo-list-item .edit, .todo-list-item .del{
+
+.todo-list-item .edit, .todo-list-item .del {
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -125,17 +129,17 @@ input:focus, select:focus{
     font-size: 16px;
 }
 
-.todo-list .task{
+.todo-list .task {
     display: flex;
 }
 
-.todo-list .task input{
+.todo-list .task input {
     margin-right: 10px;
     width: 20px;
 }
 
 /* delete container */
-.delete-container{
+.delete-container {
     width: 400px;
     height: 250px;
     background-color: white;
@@ -146,12 +150,12 @@ input:focus, select:focus{
     flex-direction: column;
 }
 
-.btn-container{
+.btn-container {
     margin-top: 20px;
     display: flex;
 }
 
-.btn-cancel, .btn-delete{
+.btn-cancel, .btn-delete {
     width: 100px;
     height: 50px;
     background-color: #a459f4;
@@ -161,6 +165,4 @@ input:focus, select:focus{
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
-    
 }
-
